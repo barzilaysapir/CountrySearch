@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda One', cursive;
+}
+
+body {
+    background-image: url(SourceFiles/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+}
+
+.navbar {
+    width: max-content;
+    margin: .5rem auto;
+    top: 1rem;
+    z-index: 1;
+    position: sticky;
+    padding: 0 1rem;
+    font-weight: 400;
+}
+
+#search-box,
+#search-btn {
+    border: 2px solid #333;
+}
+
+form {
+    margin: 3rem;
+}
+
+#search-box:focus,
+#search-box:hover {
+    color: #333;
+    background-color: #fff;
+    box-shadow: inset 0 0 2px rgba(40, 40, 40, 0.6);
+}
+
+#show-all-btn {
+    display: block;
+    font-size: larger;
+    margin: 1rem auto;
+    font-family: 'Merienda One', cursive;
+}
+
+main {
+    width: 95vw;
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* ------------------ CARDS ------------------ */
+
+.card {
+    margin: 1rem;
+    box-shadow: 0px 0px 20px #ccc;
+    background-image: url(SourceFiles/card-pattern.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 20%;
+    min-height: max-content;
+    transition: all .3s;
+}
+
+.card:nth-child(even):hover {
+    transform: scale(1.1);
+}
+
+.card:nth-child(odd):hover {
+    transform: scale(1.05);
+}
+
+.cardImg {
+    max-height: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.card-info {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.card-body li {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.card-body ul {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.currencies * {
+    padding: 0;
+    border: none;
+}
